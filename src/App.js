@@ -47,7 +47,15 @@ function App() {
 
     map.current.on('load', function () {
       // When the map loads, add the source and layer
-      map.current.addSource('iso', {
+      map.current.addSource('isodrive', {
+        type: 'geojson',
+        data: {
+          'type': 'FeatureCollection',
+          'features': []
+        }
+      });
+
+      map.current.addSource('isobike', {
         type: 'geojson',
         data: {
           'type': 'FeatureCollection',
@@ -56,10 +64,10 @@ function App() {
       });
 
       map.current.addLayer({
-        'id': 'isoLayer',
+        'id': 'isodriveLayer',
         'type': 'fill',
         // Use "iso" as the data source for this layer
-        'source': 'iso',
+        'source': 'isodrive',
         'layout': {},
         'paint': {
           // The fill color for the layer is set to a light purple
@@ -68,9 +76,26 @@ function App() {
         }
       }, "poi-label");
 
-      fetch(`https://api.mapbox.com/isochrone/v1/mapbox/driving/-77.04,38.907?contours_minutes=30&polygons=true&access_token=${process.env.REACT_APP_MID}`)
+      map.current.addLayer({
+        'id': 'isobikeLayer',
+        'type': 'fill',
+        // Use "iso" as the data source for this layer
+        'source': 'isobike',
+        'layout': {},
+        'paint': {
+          // The fill color for the layer is set to a light purple
+          'fill-color': '#5a3fc0',
+          'fill-opacity': 0.3
+        }
+      }, "poi-label");
+
+      fetch(`https://api.mapbox.com/isochrone/v1/mapbox/driving/-76.928640,38.982650?contours_minutes=30&contours_colors=6706ce&polygons=true&access_token=${process.env.REACT_APP_MID}`)
       .then(res => res.json())
-      .then(data => map.current.getSource('iso').setData(data))
+      .then(data => map.current.getSource('isodrive').setData(data))
+
+      fetch(`https://api.mapbox.com/isochrone/v1/mapbox/cycling/-76.928640,38.982650?contours_minutes=20&contours_colors=4286f4&polygons=true&access_token=${process.env.REACT_APP_MID}`)
+      .then(res => res.json())
+      .then(data => map.current.getSource('isobike').setData(data))
 
       map.current.addLayer({
         'id': 'lines',
