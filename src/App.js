@@ -4,17 +4,20 @@ import useSWR from 'swr'
 import Wmata from './wmata.png'
 import Paw from './paw.png'
 import mapboxgl from 'mapbox-gl';
-import dogParks from './dogParks';
+import dogParks from './data/dogParks';
+import stations from './data/stations';
+import lines from './data/lines';
 
 function App() {
   mapboxgl.accessToken = process.env.REACT_APP_MID;
   const fetcher = url => fetch(url).then(r => r.json())
-
+// 
   const map = useRef();
-  const { data: metroStations, error: metroStationError } = useSWR(
-    'https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_WebMercator/MapServer/51/query?where=1%3D1&outFields=OBJECTID,NAME,ADDRESS,LINE,Shape&outSR=4326&f=geojson',
-    fetcher
-  )
+  // const { data: metroStations, error: metroStationError } = useSWR(
+  //   'https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_WebMercator/MapServer/51/query?where=1%3D1&outFields=OBJECTID,NAME,ADDRESS,LINE,Shape&outSR=4326&f=geojson',
+  //   fetcher
+  // )
+
   useEffect(() => {
     map.current = new mapboxgl.Map({
       container: 'map',
@@ -30,32 +33,28 @@ function App() {
       trackUserLocation: true
     }));
 
-   
-
-    // map.on('load', function () {
-    //   map.addLayer({
-    //   "id": "route",
-    //   "type": "line",
-    //   "source": {
-    //   "type": "geojson",
-    //   "data": data
-    //   },
-    //   "layout": {
-    //   "line-join": "round",
-    //   "line-cap": "round"
-    //   },
-    //   "paint": {
-    //   "line-color": "#888",
-    //   "line-width": 8
-    //   }
-    //   });
-    //   });
+    map.current.on('load', function () {
+      map.current.addLayer({
+        'id': 'lines',
+        'type': 'line',
+        'source': {
+          'type': 'geojson',
+          'data': lines
+        },
+        'paint': {
+          'line-width': 3,
+          // Use a get expression (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-get)
+          // to set the line-color to a feature property value.
+          'line-color': ['get', 'color']
+        }
+      });
+    });
   }, [map])
 
   useEffect(() => {
-    if (!metroStations || metroStationError) return;
-    
-    metroStations.features.forEach(function (marker) {
+    if (!stations) return;
+
+    stations.features.forEach(function (marker) {
       const el = document.createElement('div');
       el.className = 'marker';
       el.style.backgroundImage = `url(${Wmata})`
@@ -69,11 +68,11 @@ function App() {
         .setPopup(popup)
         .addTo(map.current);
     });
-  }, [metroStations, metroStationError, map])
+  }, [map])
 
   useEffect(() => {
     if (!dogParks) return;
-    
+
     dogParks.features.forEach(function (marker) {
       const el = document.createElement('div');
       el.className = 'marker';
@@ -96,3 +95,12 @@ function App() {
 }
 
 export default App;
+
+// colors: {
+//   green: 9, 153, 81
+//   blue: 8, 108, 180
+//   silver: 160,160,160
+//   orange:240,130,36
+//   red:230,57,50
+//   yelllow:246,213, 15
+// }

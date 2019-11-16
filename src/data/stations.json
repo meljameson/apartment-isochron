@@ -1,0 +1,1558 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "EPSG:4326"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.021916677974545,
+                    38.893673008703423
+                ]
+            },
+            "properties": {
+                "OBJECTID": 1,
+                "NAME": "Archives-Navy Mem'l",
+                "ADDRESS": "701 PENNSYLVANIA AVENUE NW, WASHINGTON, DC",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01750749635643,
+                    38.876469648771419
+                ]
+            },
+            "properties": {
+                "OBJECTID": 2,
+                "NAME": "Waterfront",
+                "ADDRESS": "399 M STREET SW, WASHINGTON, DC",
+                "LINE": "green"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.044044588792559,
+                    38.853424162226453
+                ]
+            },
+            "properties": {
+                "OBJECTID": 3,
+                "NAME": "Ronald Reagan Washington National Airport",
+                "ADDRESS": "2400 S. SMITH BLVD., ARLINGTON, VA",
+                "LINE": "blue, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.129113841285388,
+                    38.799315434155886
+                ]
+            },
+            "properties": {
+                "OBJECTID": 4,
+                "NAME": "Van Dorn Street",
+                "ADDRESS": "5690 EISENHOWER AVENUE, ALEXANDRIA, VA",
+                "LINE": "blue, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.167972508092944,
+                    38.766529646753384
+                ]
+            },
+            "properties": {
+                "OBJECTID": 5,
+                "NAME": "Franconia-Springfield",
+                "ADDRESS": "6880 FRONTIER DRIVE, SPRINGFIELD, VA",
+                "LINE": "blue, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0158705045136,
+                    38.885080138818253
+                ]
+            },
+            "properties": {
+                "OBJECTID": 6,
+                "NAME": "Federal Center SW",
+                "ADDRESS": "401 3RD STREET SW, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.01664124510657,
+                    38.896098103530285
+                ]
+            },
+            "properties": {
+                "OBJECTID": 7,
+                "NAME": "Judiciary Sq",
+                "ADDRESS": "450 F STREET NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.005141704154411,
+                    38.885070284996232
+                ]
+            },
+            "properties": {
+                "OBJECTID": 8,
+                "NAME": "Capitol South",
+                "ADDRESS": "355 1ST STREET SE, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.028080289359153,
+                    38.898322259102336
+                ]
+            },
+            "properties": {
+                "OBJECTID": 9,
+                "NAME": "Metro Center",
+                "ADDRESS": "607 13TH STREET NW, WASHINGTON, DC",
+                "LINE": "red, blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.021917680683458,
+                    38.898324595916023
+                ]
+            },
+            "properties": {
+                "OBJECTID": 10,
+                "NAME": "Gallery Pl-Chinatown",
+                "ADDRESS": "630 H STREET NW, WASHINGTON, DC",
+                "LINE": "red, green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.021916671141753,
+                    38.906444602708468
+                ]
+            },
+            "properties": {
+                "OBJECTID": 11,
+                "NAME": "Mt Vernon Sq - 7th St Convention Center",
+                "ADDRESS": "700 M STREET NW, WASHINGTON, DC",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.027498186088025,
+                    38.917010188922774
+                ]
+            },
+            "properties": {
+                "OBJECTID": 12,
+                "NAME": "U St/African-Amer Civil War Memorial/Cardozo",
+                "ADDRESS": "1300 U STREET NW, WASHINGTON, DC",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.007416577910234,
+                    38.897773825784128
+                ]
+            },
+            "properties": {
+                "OBJECTID": 13,
+                "NAME": "Union Station",
+                "ADDRESS": "701 1ST STREET NE, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 14,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.988514209257715,
+                    38.845665479611412
+                ]
+            },
+            "properties": {
+                "OBJECTID": 14,
+                "NAME": "Congress Heights",
+                "ADDRESS": "1290 ALABAMA AVENUE SE, WASHINGTON, DC",
+                "LINE": "green"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 15,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.956264976405279,
+                    38.851309162661359
+                ]
+            },
+            "properties": {
+                "OBJECTID": 15,
+                "NAME": "Naylor Road",
+                "ADDRESS": "3101 BRANCH AVENUE, TEMPLE HILLS, MD",
+                "LINE": "green"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 16,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.931872417863445,
+                    38.843972332915122
+                ]
+            },
+            "properties": {
+                "OBJECTID": 16,
+                "NAME": "Suitland",
+                "ADDRESS": "4500 SILVER HILL ROAD, SUITLAND, MD",
+                "LINE": "green"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.911466469232295,
+                    38.826454124035919
+                ]
+            },
+            "properties": {
+                "OBJECTID": 17,
+                "NAME": "Branch Ave",
+                "ADDRESS": "4704 OLD SOPER ROAD, SUITLAND, MD",
+                "LINE": "green"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 18,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.053669869076529,
+                    38.814151435235772
+                ]
+            },
+            "properties": {
+                "OBJECTID": 18,
+                "NAME": "Braddock Road",
+                "ADDRESS": "700 N. WEST ST., ALEXANDRIA, VA",
+                "LINE": "blue, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.060813505322997,
+                    38.806593883401895
+                ]
+            },
+            "properties": {
+                "OBJECTID": 19,
+                "NAME": "King St - Old Town",
+                "ADDRESS": "1900 KING STREET, ALEXANDRIA, VA",
+                "LINE": "blue, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 20,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.070876688847846,
+                    38.800433214235646
+                ]
+            },
+            "properties": {
+                "OBJECTID": 20,
+                "NAME": "Eisenhower Ave",
+                "ADDRESS": "2400 EISENHOWER AVENUE, ALEXANDRIA, VA",
+                "LINE": "yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 21,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.075208089633975,
+                    38.793923615964381
+                ]
+            },
+            "properties": {
+                "OBJECTID": 21,
+                "NAME": "Huntington",
+                "ADDRESS": "2701 HUNTINGTON AVENUE, ALEXANDRIA, VA",
+                "LINE": "yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.995373018593241,
+                    38.862970896776822
+                ]
+            },
+            "properties": {
+                "OBJECTID": 22,
+                "NAME": "Anacostia",
+                "ADDRESS": "1101 HOWARD ROAD SE, WASHINGTON, DC",
+                "LINE": "green"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 23,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.996003408070976,
+                    38.884630045165387
+                ]
+            },
+            "properties": {
+                "OBJECTID": 23,
+                "NAME": "Eastern Market",
+                "ADDRESS": "701 PENNSYLVANIA AVENUE SE, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 24,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.98549759753331,
+                    38.88127105766926
+                ]
+            },
+            "properties": {
+                "OBJECTID": 24,
+                "NAME": "Potomac Ave",
+                "ADDRESS": "700 14TH STREET SE, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 25,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.977091177034254,
+                    38.886716875290645
+                ]
+            },
+            "properties": {
+                "OBJECTID": 25,
+                "NAME": "Stadium Armory",
+                "ADDRESS": "192 19TH STREET SE, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 26,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.995939200222168,
+                    38.921067480859712
+                ]
+            },
+            "properties": {
+                "OBJECTID": 26,
+                "NAME": "Rhode Island Ave",
+                "ADDRESS": "919 RHODE ISLAND AVENUE NE, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 27,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.946750000541968,
+                    38.899199012183928
+                ]
+            },
+            "properties": {
+                "OBJECTID": 27,
+                "NAME": "Minnesota Ave",
+                "ADDRESS": "400 MINNESOTA AVENUE NE, WASHINGTON, DC",
+                "LINE": "orange"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 28,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.062988486318289,
+                    38.943273081966801
+                ]
+            },
+            "properties": {
+                "OBJECTID": 28,
+                "NAME": "Van Ness-UDC",
+                "ADDRESS": "4200 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 29,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.058044822872105,
+                    38.934770682922021
+                ]
+            },
+            "properties": {
+                "OBJECTID": 29,
+                "NAME": "Cleveland Park",
+                "ADDRESS": "3599 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 30,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.032554413088235,
+                    38.927845759196835
+                ]
+            },
+            "properties": {
+                "OBJECTID": 30,
+                "NAME": "Columbia Heights",
+                "ADDRESS": "3030 14TH STREET NW, WASHINGTON, DC",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 31,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.24156035315211,
+                    38.928959627090741
+                ]
+            },
+            "properties": {
+                "OBJECTID": 31,
+                "NAME": "Spring Hill",
+                "ADDRESS": "1576 SPRING HILL ROAD VIENNA, VA 22182",
+                "LINE": "silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 32,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.233880196655846,
+                    38.920963176241905
+                ]
+            },
+            "properties": {
+                "OBJECTID": 32,
+                "NAME": "Greensboro",
+                "ADDRESS": "8305 LEESBURG PIKE VIENNA, VA 22182",
+                "LINE": "silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 33,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.221718036650131,
+                    38.920682053480945
+                ]
+            },
+            "properties": {
+                "OBJECTID": 33,
+                "NAME": "Tysons Corner",
+                "ADDRESS": "1943 CHAIN BRIDGE ROAD MCLEAN, VA 22102",
+                "LINE": "silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 34,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.210081293200375,
+                    38.924529549980846
+                ]
+            },
+            "properties": {
+                "OBJECTID": 34,
+                "NAME": "McLean",
+                "ADDRESS": "1824 DOLLEY MADISON BOULIVARD MCLEAN, VA 22102",
+                "LINE": "silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 35,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.340062216397143,
+                    38.947740663167465
+                ]
+            },
+            "properties": {
+                "OBJECTID": 35,
+                "NAME": "Wiehle-Reston East",
+                "ADDRESS": "1862 WIEHLE AVENUE RESTON, VA 20190",
+                "LINE": "silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 36,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.928127247817926,
+                    38.978641439767721
+                ]
+            },
+            "properties": {
+                "OBJECTID": 36,
+                "NAME": "College Park-U of Md",
+                "ADDRESS": "4931 CALVERT ROAD, COLLEGE PARK, MD",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 37,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.911810369947219,
+                    38.889473645303347
+                ]
+            },
+            "properties": {
+                "OBJECTID": 37,
+                "NAME": "Capitol Heights",
+                "ADDRESS": "133 CENTRAL AVENUE, CAPITOL HEIGHTS, MD",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 38,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.86807701020237,
+                    38.893842719150648
+                ]
+            },
+            "properties": {
+                "OBJECTID": 38,
+                "NAME": "Morgan Boulevard",
+                "ADDRESS": "300 GARRETT MORGAN BLVD., LANDOVER, MD",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 39,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.023463197213701,
+                    38.937442424091344
+                ]
+            },
+            "properties": {
+                "OBJECTID": 39,
+                "NAME": "Georgia Ave Petworth",
+                "ADDRESS": "3700 GEORGIA AVENUE NW, WASHINGTON, DC",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 40,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.018178992564557,
+                    38.976086332993184
+                ]
+            },
+            "properties": {
+                "OBJECTID": 40,
+                "NAME": "Takoma",
+                "ADDRESS": "327 CEDAR STREET NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 41,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.053559669512026,
+                    39.061791583364325
+                ]
+            },
+            "properties": {
+                "OBJECTID": 41,
+                "NAME": "Glenmont",
+                "ADDRESS": "12501 GEORGIA AVENUE, SILVER SPRING, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 42,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.050109361107531,
+                    39.037534956764567
+                ]
+            },
+            "properties": {
+                "OBJECTID": 42,
+                "NAME": "Wheaton",
+                "ADDRESS": "11171 GEORGIA AVENUE, SILVER SPRING, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 43,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.042918858846548,
+                    39.014962084100269
+                ]
+            },
+            "properties": {
+                "OBJECTID": 43,
+                "NAME": "Forest Glen",
+                "ADDRESS": "9730 GEORGIA AVENUE, FOREST GLEN, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 44,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.031020125770567,
+                    38.993957179810856
+                ]
+            },
+            "properties": {
+                "OBJECTID": 44,
+                "NAME": "Silver Spring",
+                "ADDRESS": "8400 COLESVILLE ROAD, SILVER SPRING, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 45,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.994536568964193,
+                    38.933218785528531
+                ]
+            },
+            "properties": {
+                "OBJECTID": 45,
+                "NAME": "Brookland-CUA",
+                "ADDRESS": "801 MICHIGAN AVENUE NE, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 46,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.002205364201004,
+                    38.951854565233262
+                ]
+            },
+            "properties": {
+                "OBJECTID": 46,
+                "NAME": "Fort Totten",
+                "ADDRESS": "550 GALLOWAY STREET NE, WASHINGTON, DC",
+                "LINE": "red, green,yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 47,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.955883781669755,
+                    38.965393247954019
+                ]
+            },
+            "properties": {
+                "OBJECTID": 47,
+                "NAME": "Prince George's Plaza",
+                "ADDRESS": "3575 EAST WEST HIGHWAY, HYATTSVILLE, MD",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 48,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.969578952526447,
+                    38.955047970226076
+                ]
+            },
+            "properties": {
+                "OBJECTID": 48,
+                "NAME": "West Hyattsville",
+                "ADDRESS": "2700 HAMILTON ST., HYATTSVILLE, MD",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 49,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.938367131914347,
+                    38.890983463751695
+                ]
+            },
+            "properties": {
+                "OBJECTID": 49,
+                "NAME": "Benning Road",
+                "ADDRESS": "4500 BENNING ROAD NE, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 50,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.894110159753097,
+                    38.886755605372151
+                ]
+            },
+            "properties": {
+                "OBJECTID": 50,
+                "NAME": "Addison Road Seat Pleasant",
+                "ADDRESS": "100 ADDISON ROAD S., CAPITOL HEIGHTS, MD",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 51,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.935259046919157,
+                    38.908186287852459
+                ]
+            },
+            "properties": {
+                "OBJECTID": 51,
+                "NAME": "Deanwood",
+                "ADDRESS": "4720 MINNESOTA AVENUE NE, WASHINGTON, DC",
+                "LINE": "orange"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 52,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.871843533075662,
+                    38.947792657512245
+                ]
+            },
+            "properties": {
+                "OBJECTID": 52,
+                "NAME": "New Carrollton",
+                "ADDRESS": "4700 GARDEN CITY DRIVE, NEW CARROLLTON, MD",
+                "LINE": "orange"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 53,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.89120021929206,
+                    38.933514032534937
+                ]
+            },
+            "properties": {
+                "OBJECTID": 53,
+                "NAME": "Landover",
+                "ADDRESS": "3000 PENNSY DRIVE, HYATTSVILLE, MD",
+                "LINE": "orange"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 54,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.916630302633621,
+                    38.916639648392724
+                ]
+            },
+            "properties": {
+                "OBJECTID": 54,
+                "NAME": "Cheverly",
+                "ADDRESS": "5501 COLUMBIA PARK, CHEVERLY, MD \r\n",
+                "LINE": "orange"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 55,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.844553869450905,
+                    38.90060751315341
+                ]
+            },
+            "properties": {
+                "OBJECTID": 55,
+                "NAME": "Largo Town Center",
+                "ADDRESS": " LARGO TOWN CENTER, 9000 LOTTSFORD ROAD, LARGO, MD",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 56,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.003022732182899,
+                    38.907024000728917
+                ]
+            },
+            "properties": {
+                "OBJECTID": 56,
+                "NAME": "NoMa - Gallaudet U",
+                "ADDRESS": "200 FLORIDA AVENUE NE, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 57,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.070910990755706,
+                    38.895986880102932
+                ]
+            },
+            "properties": {
+                "OBJECTID": 57,
+                "NAME": "Rosslyn",
+                "ADDRESS": "1850 N. MOORE STREET, ARLINGTON, VA",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 58,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.062812431299761,
+                    38.884694640368075
+                ]
+            },
+            "properties": {
+                "OBJECTID": 58,
+                "NAME": "Arlington|Cemetery",
+                "ADDRESS": "1000 NORTH MEMORIAL DRIVE, ARLINGTON, VA",
+                "LINE": "blue"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 59,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.043416657370443,
+                    38.909605845163675
+                ]
+            },
+            "properties": {
+                "OBJECTID": 59,
+                "NAME": "Dupont Circle",
+                "ADDRESS": "1525 20TH STREET NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 60,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.053717971830821,
+                    38.869470480371817
+                ]
+            },
+            "properties": {
+                "OBJECTID": 60,
+                "NAME": "Pentagon",
+                "ADDRESS": "2 SOUTH ROTARY ROAD, ARLINGTON, VA",
+                "LINE": "blue, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 61,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.050292106336087,
+                    38.85791209734677
+                ]
+            },
+            "properties": {
+                "OBJECTID": 61,
+                "NAME": "Crystal City",
+                "ADDRESS": "1750 SOUTH CLARK ST., ARLINGTON, VA",
+                "LINE": "blue, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 62,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.005087935056608,
+                    38.876488867248575
+                ]
+            },
+            "properties": {
+                "OBJECTID": 62,
+                "NAME": "Navy Yard - Ballpark",
+                "ADDRESS": "200 M STREET SE, WASHINGTON, DC",
+                "LINE": "green"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 63,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.033636466218013,
+                    38.901340583177877
+                ]
+            },
+            "properties": {
+                "OBJECTID": 63,
+                "NAME": "McPherson Sq",
+                "ADDRESS": "1400 I STREET NW, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 64,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.021913991970223,
+                    38.913484660340821
+                ]
+            },
+            "properties": {
+                "OBJECTID": 64,
+                "NAME": "Shaw-Howard Univ",
+                "ADDRESS": "1701 8TH STREET NW, WASHINGTON, DC",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 65,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.975056411055519,
+                    38.841093556642228
+                ]
+            },
+            "properties": {
+                "OBJECTID": 65,
+                "NAME": "Southern Ave",
+                "ADDRESS": "1411 SOUTHERN AVENUE, TEMPLE HILLS, MD",
+                "LINE": "green"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 66,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.911059835750834,
+                    39.011153673496459
+                ]
+            },
+            "properties": {
+                "OBJECTID": 66,
+                "NAME": "Greenbelt",
+                "ADDRESS": "5717 GREENBELT METRO DRIVE, GREENBELT, MD",
+                "LINE": "green, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 67,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.079589636844076,
+                    38.94885922929322
+                ]
+            },
+            "properties": {
+                "OBJECTID": 67,
+                "NAME": "Tenleytown-AU",
+                "ADDRESS": "4501 WISCONSIN AVENUE NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 68,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.189097165042867,
+                    38.900788331397628
+                ]
+            },
+            "properties": {
+                "OBJECTID": 68,
+                "NAME": "West Falls Church VT/UVA",
+                "ADDRESS": "7040 HAYCOCK ROAD, FALLS CHURCH, VA",
+                "LINE": "orange"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 69,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.227163025347608,
+                    38.883632911435264
+                ]
+            },
+            "properties": {
+                "OBJECTID": 69,
+                "NAME": "Dunn Loring Merrifield",
+                "ADDRESS": "2700 GALLOWS ROAD, VIENNA, VA",
+                "LINE": "orange"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 70,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.272624623927001,
+                    38.877608896416248
+                ]
+            },
+            "properties": {
+                "OBJECTID": 70,
+                "NAME": "Vienna Fairfax-GMU",
+                "ADDRESS": "2900 NUTLEY ST., FAIRFAX, VA",
+                "LINE": "orange"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 71,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.084998118687963,
+                    38.95949166976218
+                ]
+            },
+            "properties": {
+                "OBJECTID": 71,
+                "NAME": "Friendship Heights",
+                "ADDRESS": "5337 WISCONSIN AVENUE NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 72,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.164629682746408,
+                    39.11993515030295
+                ]
+            },
+            "properties": {
+                "OBJECTID": 72,
+                "NAME": "Shady Grove",
+                "ADDRESS": "15903 SOMERVILLE DRIVE, DERWOOD, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 73,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.146127679677377,
+                    39.084329426435602
+                ]
+            },
+            "properties": {
+                "OBJECTID": 73,
+                "NAME": "Rockville",
+                "ADDRESS": "251 HUNGERFORD DRIVE, ROCKVILLE, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 74,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.120820282922963,
+                    39.062475467145603
+                ]
+            },
+            "properties": {
+                "OBJECTID": 74,
+                "NAME": "Twinbrook",
+                "ADDRESS": "1600 CHAPMAN AVENUE, ROCKVILLE, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 75,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.112832186816718,
+                    39.048159170195724
+                ]
+            },
+            "properties": {
+                "OBJECTID": 75,
+                "NAME": "White Flint",
+                "ADDRESS": "5500 MARINELLI ROAD, ROCKVILLE, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 76,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.103852043830386,
+                    39.02927675944003
+                ]
+            },
+            "properties": {
+                "OBJECTID": 76,
+                "NAME": "Grosvenor-Strathmore",
+                "ADDRESS": "10300 ROCKVILLE PIKE, BETHESDA, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 77,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.096954610411402,
+                    39.00006428814779
+                ]
+            },
+            "properties": {
+                "OBJECTID": 77,
+                "NAME": "Medical Center",
+                "ADDRESS": "8810 ROCKVILLE PIKE, BETHESDA, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 78,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.094131510250492,
+                    38.984401461151435
+                ]
+            },
+            "properties": {
+                "OBJECTID": 78,
+                "NAME": "Bethesda",
+                "ADDRESS": "7450 WISCONSIN AVENUE, BETHESDA, MD",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 79,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.050280038297259,
+                    38.90070579476852
+                ]
+            },
+            "properties": {
+                "OBJECTID": 79,
+                "NAME": "Foggy Bottom GWU",
+                "ADDRESS": "2301 I STREET NW, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.087133541117311,
+                    38.890183313262327
+                ]
+            },
+            "properties": {
+                "OBJECTID": 80,
+                "NAME": "Court House",
+                "ADDRESS": "2100 WILSON BLVD, ARLINGTON, VA",
+                "LINE": "orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 81,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.095396410781134,
+                    38.886712620109968
+                ]
+            },
+            "properties": {
+                "OBJECTID": 81,
+                "NAME": "Clarendon",
+                "ADDRESS": "3100 WILSON BLVD, ARLINGTON, VA",
+                "LINE": "orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 82,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.156885351505224,
+                    38.885960944956501
+                ]
+            },
+            "properties": {
+                "OBJECTID": 82,
+                "NAME": "East Falls Church",
+                "ADDRESS": "2001 N. SYCAMORE ST., ARLINGTON, VA",
+                "LINE": "orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 83,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.102979608792126,
+                    38.883373931882161
+                ]
+            },
+            "properties": {
+                "OBJECTID": 83,
+                "NAME": "Virginia Square-GMU",
+                "ADDRESS": "3600 FAIRFAX DRIVE, ARLINGTON, VA",
+                "LINE": "orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 84,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.113171152736172,
+                    38.882190653269987
+                ]
+            },
+            "properties": {
+                "OBJECTID": 84,
+                "NAME": "Ballston-MU",
+                "ADDRESS": "4230 FAIRFAX DRIVE, ARLINGTON, VA",
+                "LINE": "orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 85,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.040697711445233,
+                    38.901320680202893
+                ]
+            },
+            "properties": {
+                "OBJECTID": 85,
+                "NAME": "Farragut West",
+                "ADDRESS": "900 18TH STREET NW, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 86,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.039703123343116,
+                    38.90320973270947
+                ]
+            },
+            "properties": {
+                "OBJECTID": 86,
+                "NAME": "Farragut North",
+                "ADDRESS": "1001 CONNECTICUT AVENUE NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 87,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.052420322193214,
+                    38.925092927477472
+                ]
+            },
+            "properties": {
+                "OBJECTID": 87,
+                "NAME": "Woodley Park-Zoo Adams Morgan",
+                "ADDRESS": "2700 24TH STREET NW, WASHINGTON, DC",
+                "LINE": "red"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 88,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.021910773530166,
+                    38.88484551131301
+                ]
+            },
+            "properties": {
+                "OBJECTID": 88,
+                "NAME": "L'Enfant Plaza",
+                "ADDRESS": "600 MARYLAND AVENUE SW, WASHINGTON, DC",
+                "LINE": "grn, yllw, orange, blue, slvr"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 89,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.028068525832225,
+                    38.888026485864579
+                ]
+            },
+            "properties": {
+                "OBJECTID": 89,
+                "NAME": "Smithsonian",
+                "ADDRESS": "1200 INDEPENDENCE AVENUE SW, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 90,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.059541221293529,
+                    38.861890164121235
+                ]
+            },
+            "properties": {
+                "OBJECTID": 90,
+                "NAME": "Pentagon City",
+                "ADDRESS": "1250 SOUTH HAYES ST., ARLINGTON, VA",
+                "LINE": "blue, yellow"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 91,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.028134290287142,
+                    38.893188656706485
+                ]
+            },
+            "properties": {
+                "OBJECTID": 91,
+                "NAME": "Federal Triangle",
+                "ADDRESS": "302 12TH STREET NW, WASHINGTON, DC",
+                "LINE": "blue, orange, silver"
+            }
+        }
+    ]
+}
