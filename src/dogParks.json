@@ -1,0 +1,235 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.975790,
+          38.926830
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "NAME": "Langdon Dog Park",
+        "ADDRESS": "2901 20th Street, NE, WASHINGTON, DC"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.923560,
+          38.963620
+        ]
+      },
+      "properties": {
+        "OBJECTID": 2,
+        "NAME": "Riverdale Dog Park",
+        "ADDRESS": "5400 Haig Drive, Riverdale Park, MD 20737"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.933550,
+          38.998700
+        ]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "NAME": "College Park Dog Park at Acredale Community Park",
+        "ADDRESS": "4300 Metzerott Road, College Park, MD 20740"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.969400,
+          38.961580
+        ]
+      },
+      "properties": {
+        "OBJECTID": 4,
+        "NAME": "Heurich Dog Park at Heurich Community Park",
+        "ADDRESS": "Nicholson Road and Ager Road, Hyattsville, MD 20782"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.037080,
+          39.047890
+        ]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "NAME": "Wheaton Regional Park",
+        "ADDRESS": "11710 Orebaugh Ave, Wheaton, MD 20902"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.880798,
+          38.989559
+        ]
+      },
+      "properties": {
+        "OBJECTID": 6,
+        "NAME": "Greenbelt Dog Park",
+        "ADDRESS": "7300 Hanover Dr, Greenbelt, MD 20770"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.890540,
+          39.081600
+        ]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "NAME": "Leo E Wilson Community Park",
+        "ADDRESS": "Van Dusen Rd, Laurel, MD 20707"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.926540,
+          38.964300
+        ]
+      },
+      "properties": {
+        "OBJECTID": 8,
+        "NAME": "Waggertail Dog Park",
+        "ADDRESS": "51st Ave, Riverdale, MD 20737"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.012140,
+          38.983790
+        ]
+      },
+      "properties": {
+        "OBJECTID": 9,
+        "NAME": "Takoma Park Dog Park",
+        "ADDRESS": "198 Darwin Ave, Takoma Park, MD 20912"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.023820,
+          39.000890
+        ]
+      },
+      "properties": {
+        "OBJECTID": 10,
+        "NAME": "Ellsworth Urban Park",
+        "ADDRESS": "621 Ellsworth Dr, Silver Spring, MD 20910"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.742300,
+          38.939540
+        ]
+      },
+      "properties": {
+        "OBJECTID": 11,
+        "NAME": "Bowie Dog Park",
+        "ADDRESS": "3600 Northview Dr, Bowie, MD 20716"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.711151,
+          39.074581
+        ]
+      },
+      "properties": {
+        "OBJECTID": 12,
+        "NAME": "Two Rivers Dog Park",
+        "ADDRESS": "Odenton, MD 21113"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.669340,
+          38.987350
+        ]
+      },
+      "properties": {
+        "OBJECTID": 13,
+        "NAME": "Bell Branch Dog Park",
+        "ADDRESS": "2400 Davidsonville Rd, Gambrills, MD 21054"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.823280,
+          39.082210
+        ]
+      },
+      "properties": {
+        "OBJECTID": 14,
+        "NAME": "Maryland City Park",
+        "ADDRESS": "565 Brock Bridge Rd, Laurel, MD 20724"
+      }
+    }
+  ]
+}
