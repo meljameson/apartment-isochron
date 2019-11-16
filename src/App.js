@@ -4,13 +4,17 @@ import useSWR from 'swr'
 import Wmata from './wmata.png'
 import Paw from './paw.png'
 import ET from './ET.png'
-import Laurel from './laurel.jpeg'
 import mapboxgl from 'mapbox-gl';
 import dogParks from './data/dogParks';
 import stations from './data/stations';
 import lines from './data/lines';
-import laurel from './data/laurel';
 import gyms from './data/gyms';
+let Laurel = null;
+let laurel = null;
+if (process.env.NODE_ENV === 'production') {
+  Laurel = require('./laurel.jpeg');
+  laurel = require('./data/laurel');
+}
 
 function App() {
   mapboxgl.accessToken = process.env.REACT_APP_MID;
