@@ -11,7 +11,7 @@ import lines from './data/lines';
 import gyms from './data/gyms';
 let Laurel = null;
 let laurel = null;
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'development') {
   Laurel = require('./laurel.jpeg');
   laurel = require('./data/laurel');
 }
