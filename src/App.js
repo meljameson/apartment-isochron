@@ -3,10 +3,14 @@ import './App.css';
 import useSWR from 'swr'
 import Wmata from './wmata.png'
 import Paw from './paw.png'
+import ET from './ET.png'
+import Laurel from './laurel.jpeg'
 import mapboxgl from 'mapbox-gl';
 import dogParks from './data/dogParks';
 import stations from './data/stations';
 import lines from './data/lines';
+import laurel from './data/laurel';
+import gyms from './data/gyms';
 
 function App() {
   mapboxgl.accessToken = process.env.REACT_APP_MID;
@@ -43,8 +47,6 @@ function App() {
         },
         'paint': {
           'line-width': 3,
-          // Use a get expression (https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-get)
-          // to set the line-color to a feature property value.
           'line-color': ['get', 'color']
         }
       });
@@ -58,6 +60,44 @@ function App() {
       const el = document.createElement('div');
       el.className = 'marker';
       el.style.backgroundImage = `url(${Wmata})`
+      el.style.width = '15px';
+      el.style.height = '15px';
+      el.style.backgroundSize = '15px';
+      const popup = new mapboxgl.Popup({ offset: 25 })
+        .setText(marker.properties.NAME);
+      new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(popup)
+        .addTo(map.current);
+    });
+  }, [map])
+
+  useEffect(() => {
+    if (!laurel) return;
+
+    laurel.features.forEach(function (marker) {
+      const el = document.createElement('div');
+      el.className = 'marker';
+      el.style.backgroundImage = `url(${Laurel})`
+      el.style.width = '15px';
+      el.style.height = '15px';
+      el.style.backgroundSize = '15px';
+      const popup = new mapboxgl.Popup({ offset: 25 })
+        .setText(marker.properties.NAME);
+      new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(popup)
+        .addTo(map.current);
+    });
+  }, [map])
+
+  useEffect(() => {
+    if (!gyms) return;
+
+    gyms.features.forEach(function (marker) {
+      const el = document.createElement('div');
+      el.className = 'marker';
+      el.style.backgroundImage = `url(${ET})`
       el.style.width = '15px';
       el.style.height = '15px';
       el.style.backgroundSize = '15px';

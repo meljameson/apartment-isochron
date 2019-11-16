@@ -1,0 +1,53 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "EPSG:4326"
+      }
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.050820,
+            38.861580
+          ]
+        },
+        "properties": {
+          "NAME": "Earth Treks Crystal City",
+          "ADDRESS": "Shops, 1235 S Clark St, Arlington, VA 22202"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.143180,
+            39.079570
+          ]
+        },
+        "properties": {
+          "NAME": "Earth Treks Rockville",
+          "ADDRESS": "725 Rockville Pike, Rockville, MD 20852"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.810530,
+            39.177380
+          ]
+        },
+        "properties": {
+          "NAME": "Earth Treks Crystal City",
+          "ADDRESS": "7125 Columbia Gateway Dr #110, Columbia, MD 21046"
+        }
+      }
+    ]
+  }
