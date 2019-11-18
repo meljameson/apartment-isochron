@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import './App.css';
 import useSWR from 'swr'
 import Wmata from './wmata.png'
@@ -9,26 +10,51 @@ import dogParks from './data/dogParks';
 import stations from './data/stations';
 import lines from './data/lines';
 import gyms from './data/gyms';
-let Laurel = null;
-let laurel = null;
+let Poi = null;
+let poi = null;
 if (process.env.NODE_ENV === 'development') {
-  Laurel = require('./laurel.jpeg');
-  laurel = require('./data/laurel');
+  Poi = require('./poi.jpeg');
+  poi = require('./data/poi');
 }
 
-function App() {
-  mapboxgl.accessToken = process.env.REACT_APP_MID;
-  const fetcher = url => fetch(url).then(r => r.json())
+const ISO_SOURCES = {
+  drive: {
+    sourceName: 'drivingIso',
+    layerName: 'drivingLayer',
+    color: '#6706ce',
+    type: 'driving',
+    location: '-76.928640,38.982650',
+    minutes: 30
+  },
+  bike: {
+    sourceName: 'bikingIso',
+    layerName: 'bikingLayer',
+    color: '#6706ce',
+    type: 'cycling',
+    location: '-76.928640,38.982650',
+    minutes: 20
+  },
+  poi: {
+    sourceName: 'poiIso',
+    layerName: 'poiLayer',
+    color: '#6706ce',
+    type: 'driving',
+    location: '-77.116810,38.897670',
+    minutes: 35
+  }
+}
 
+mapboxgl.accessToken = process.env.REACT_APP_MID;
+const fetcher = url => fetch(url).then(r => r.json())
+
+function App() {
+  const apartments = null;
   const map = useRef();
   // const { data: metroStations, error: metroStationError } = useSWR(
   //   'https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_WebMercator/MapServer/51/query?where=1%3D1&outFields=OBJECTID,NAME,ADDRESS,LINE,Shape&outSR=4326&f=geojson',
   //   fetcher
   // )
 
-  const apartments = null;
-
-  // get driving isochrone
   const { data, error } = useSWR(
     `https://api.mapbox.com/isochrone/v1/mapbox/driving/-77.04,38.907?contours_minutes=30&polygons=true&access_token=${process.env.REACT_APP_MID}`,
     fetcher
@@ -42,6 +68,11 @@ function App() {
       zoom: 11.15
     });
 
+    map.current.addControl(new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl
+    }));
+
     map.current.addControl(new mapboxgl.GeolocateControl({
       positionOptions: {
         enableHighAccuracy: true
@@ -50,56 +81,58 @@ function App() {
     }));
 
     map.current.on('load', function () {
-      // When the map loads, add the source and layer
-      map.current.addSource('isodrive', {
-        type: 'geojson',
-        data: {
-          'type': 'FeatureCollection',
-          'features': []
-        }
-      });
+      for (const source of Object.values(ISO_SOURCES)) {
+        map.current.addSource(source.sourceName, {
+          type: 'geojson',
+          data: {
+            'type': 'FeatureCollection',
+            'features': []
+          }
+        });
+        map.current.addLayer({
+          'id': source.layerName,
+          'type': 'fill',
+          'source': source.sourceName,
+          'layout': {},
+          'paint': {
+            'fill-color': source.color,
+            'fill-opacity': 0.3
+          }
+        }, "poi-label");
 
-      map.current.addSource('isobike', {
-        type: 'geojson',
-        data: {
-          'type': 'FeatureCollection',
-          'features': []
-        }
-      });
+        fetch(`https://api.mapbox.com/isochrone/v1/mapbox/${source.type}/${source.location}?contours_minutes=${source.minutes}&polygons=true&access_token=${process.env.REACT_APP_MID}`)
+          .then(res => res.json())
+          .then(data => map.current.getSource(source.sourceName).setData(data))
+      }
 
-      map.current.addLayer({
-        'id': 'isodriveLayer',
-        'type': 'fill',
-        // Use "iso" as the data source for this layer
-        'source': 'isodrive',
-        'layout': {},
-        'paint': {
-          // The fill color for the layer is set to a light purple
-          'fill-color': '#5a3fc0',
-          'fill-opacity': 0.3
-        }
-      }, "poi-label");
+      var toggleableLayerIds = ['drivingLayer', 'bikingLayer', 'poiLayer'];
+      for (var i = 0; i < toggleableLayerIds.length; i++) {
+        var id = toggleableLayerIds[i];
 
-      map.current.addLayer({
-        'id': 'isobikeLayer',
-        'type': 'fill',
-        // Use "iso" as the data source for this layer
-        'source': 'isobike',
-        'layout': {},
-        'paint': {
-          // The fill color for the layer is set to a light purple
-          'fill-color': '#5a3fc0',
-          'fill-opacity': 0.3
-        }
-      }, "poi-label");
+        var link = document.createElement('a');
+        link.href = '#';
+        link.className = 'active';
+        link.textContent = id;
 
-      fetch(`https://api.mapbox.com/isochrone/v1/mapbox/driving/-76.928640,38.982650?contours_minutes=30&contours_colors=6706ce&polygons=true&access_token=${process.env.REACT_APP_MID}`)
-      .then(res => res.json())
-      .then(data => map.current.getSource('isodrive').setData(data))
+        link.onclick = function (e) {
+          var clickedLayer = this.textContent;
+          e.preventDefault();
+          e.stopPropagation();
 
-      fetch(`https://api.mapbox.com/isochrone/v1/mapbox/cycling/-76.928640,38.982650?contours_minutes=20&contours_colors=4286f4&polygons=true&access_token=${process.env.REACT_APP_MID}`)
-      .then(res => res.json())
-      .then(data => map.current.getSource('isobike').setData(data))
+          var visibility = map.current.getLayoutProperty(clickedLayer, 'visibility');
+
+          if (visibility === 'visible') {
+            map.current.setLayoutProperty(clickedLayer, 'visibility', 'none');
+            this.className = '';
+          } else {
+            this.className = 'active';
+            map.current.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+          }
+        };
+
+        var layers = document.getElementById('menu');
+        layers.appendChild(link);
+      }
 
       map.current.addLayer({
         'id': 'lines',
@@ -136,12 +169,12 @@ function App() {
   }, [map])
 
   useEffect(() => {
-    if (!laurel) return;
+    if (!poi) return;
 
-    laurel.features.forEach(function (marker) {
+    poi.features.forEach(function (marker) {
       const el = document.createElement('div');
       el.className = 'marker';
-      el.style.backgroundImage = `url(${Laurel})`
+      el.style.backgroundImage = `url(${Poi})`
       el.style.width = '15px';
       el.style.height = '15px';
       el.style.backgroundSize = '15px';
@@ -212,19 +245,12 @@ function App() {
     });
   }, [apartments, map])
 
-  // useEffect(() => {
-  //   if (!data) return;
-  //   // data runs before the map load
-  //   console.log(data)
-  //   map.current.getSource('iso') && map.current.getSource('iso').setData(data);
-  // }, [data, map, map.current.getSource('iso')])
-
   return (
     <>
       <div id="map" />
+      <div id="menu" />
 
-
-      <div class='absolute fl my24 mx24 py24 px24 bg-gray-faint round'>
+      {/* <div class='absolute fl my24 mx24 py24 px24 bg-gray-faint round'>
         <form id='params'>
           <h4 class='txt-m txt-bold mb6'>Chose a travel mode:</h4>
           <div class='mb12 mr12 toggle-group align-center'>
@@ -257,7 +283,7 @@ function App() {
             </label>
           </div>
         </form>
-      </div>
+      </div> */}
 
 
 

@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-src/laurel.jpeg
-src/data/laurel.json
+src/poi.jpeg
+src/data/poi.json

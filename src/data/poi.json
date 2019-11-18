@@ -1,0 +1,27 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "EPSG:4326"
+      }
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "id": 1,
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.116810,
+            38.897670
+          ]
+        },
+        "properties": {
+          "OBJECTID": 1,
+          "NAME": "Laurel",
+          "ADDRESS": "2901 20th Street, NE, WASHINGTON, DC"
+        }
+      }
+    ]
+  }
